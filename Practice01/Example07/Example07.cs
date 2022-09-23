@@ -6,3 +6,16 @@
 */
 
 
+Console.WriteLine("Введите целое трёхзначное число, чтобы вывести последнюю цифру этого числа. ");
+int num = Convert.ToInt32(Console.ReadLine());
+int res = num % 10;
+
+if(num > -1000 && num < -99 || num > 99 && num < 1000)
+{ 
+    Console.WriteLine($"Последняя цифра этого числа равна {Math.Abs(res)}. ");
+    Console.WriteLine("Хорошего дня!:) ");
+}
+else
+{
+    Console.WriteLine("Это число не является трёхзначным. Пожалуйста, введите целое трёхзначное число. "); 
+}

@@ -11,6 +11,7 @@ int i = -a;
 Console.Write($"Вывод чисел в диапазоне от -N до N: ");
 while (i <= a)
 {
-    Console.Write($"{i}, ");
-    i ++;
+    if (i < a) Console.Write($"{i}, ");
+    else Console.Write($"{i}. ");
+    i++;
 }

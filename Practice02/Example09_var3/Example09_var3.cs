@@ -16,9 +16,10 @@ int MaxDigit(int a)
     int firstDigit = a / 10;
     int secondDigit = a % 10;
     if (firstDigit == secondDigit) return 0;
-    int res = firstDigit > secondDigit ? firstDigit : secondDigit; 
-    return res;
+    int result = firstDigit > secondDigit ? firstDigit : secondDigit; 
+    return result;
 }
 
-int res = MaxDigit(num);
+int result = MaxDigit(num);
+string res = result == 0 ? "Цифры равны" : result.ToString();
 Console.WriteLine($"Наибольшая цифра числа {num} -> {res}. ");

@@ -7,6 +7,13 @@
 */
 
 Console.Write("Введите целое число: ");
-int a = Convert.ToInt32(Console.ReadLine());
-int res = a * a;
-Console.Write($"Квадрат числа {a} равен {res}.");
+// int a = Convert.ToInt32(Console.ReadLine());
+if (int.TryParse(Console.ReadLine(), out int a))
+{
+    int square = a * a; 
+    Console.Write($"Квадрат числа {a} равен {square}. ");
+}
+else
+{
+    Console.WriteLine("Это число не является целым. Пожалуйста, введите целое число. "); 
+}

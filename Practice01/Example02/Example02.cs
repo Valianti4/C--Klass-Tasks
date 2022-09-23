@@ -7,6 +7,7 @@ a = 9, b = 3 -> да;
 a = -3, b = 9 -> нет;
 */
 
+
 Console.Write("Введите число a: ");
 double a = Convert.ToDouble(Console.ReadLine());
 Console.Write("Введите число b: ");

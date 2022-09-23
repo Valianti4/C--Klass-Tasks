@@ -6,9 +6,10 @@
 -7 -> 49
 */
 
+
 Console.Write("Введите целое число: ");
 // int a = Convert.ToInt32(Console.ReadLine());
-if (int.TryParse(Console.ReadLine(), out int a))
+if (int.TryParse(Console.ReadLine(), out int a)) // Этот оператор позволяет проверить, является ли введёное число целым.
 {
     int square = a * a; 
     Console.Write($"Квадрат числа {a} равен {square}. ");

@@ -12,11 +12,5 @@ double a = Convert.ToDouble(Console.ReadLine());
 Console.Write("Введите число b: ");
 double b = Convert.ToDouble(Console.ReadLine());
 
-if (a == b * b)
-{
-    Console.Write($"Число {a} является квадратом числа {b}. ");
-}
-else
-{
-    Console.Write($"Число {a} не является квадратом числа {b}. ");
-}
+if (a == b * b) Console.Write($"Число {a} является квадратом числа {b}. ");
+else Console.Write($"Число {a} не является квадратом числа {b}. ");

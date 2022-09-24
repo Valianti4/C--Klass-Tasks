@@ -4,6 +4,7 @@
 Решение с помощью метода.
 */
 
+
 string GetQuarter(int xc, int yc)
 {
     if (xc > 0 && yc > 0) return "Первая четверть.";
